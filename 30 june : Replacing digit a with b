@@ -1,0 +1,37 @@
+import java.util.*;
+import java.io.*;
+public class ReplaceDigit
+{
+static int replaceDigit(int n,int a,int b)
+{
+ int res=0,mul=1;
+  while(n/10>0)
+   {
+int rem=n%10;
+if(rem==a)
+res=res+b*mul;
+else
+res=res+rem*mul;
+mul*=10;
+n/=10;
+}
+if(n==a)
+res=res+b*mul;
+else
+res=res+n*mul;
+return res;
+   }
+public static void main(String ar[])
+{
+Scanner s=new Scanner(System.in);
+
+int n=s.nextInt();
+int a=s.nextInt();
+int b=s.nextInt();
+System.out.println(replaceDigit(n,a,b));
+}
+}
+
+output:
+12345 2 9
+19345

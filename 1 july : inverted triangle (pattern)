@@ -1,0 +1,31 @@
+//TO PRINT THE PATTERN OF INVERTED RIGHT TRIANGLE//
+
+import java.util.*;
+
+public class PatternInvertedRightTriangle
+{
+public static void main(String ar[])
+	{
+	 int n;
+	 Scanner s=new Scanner(System.in);
+	 n=s.nextInt();
+	 
+	 for(int i=n;i>0;i--)
+	  {
+	   for(int j=0;j<i;j++)
+		{
+		System.out.print("* ");
+		}
+	   System.out.println();
+	  }
+	}
+}
+
+OUTPUT:
+E:\sasi coding>java PatternInvertedRightTriangle
+5
+* * * * *
+* * * *
+* * *
+* *
+*

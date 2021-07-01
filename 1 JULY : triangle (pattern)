@@ -1,0 +1,43 @@
+//PRINT THE PATTERN OF TRIANGLE//
+
+import java.util.*;
+
+public class PatternTriangle
+{
+public static void main(String ar[])
+	{
+	 int n;
+	 Scanner s=new Scanner(System.in);
+	 n=s.nextInt();
+	 
+	 for(int i=1;i<=n;i++)
+	  {
+	   for(int j=1;j<=i;j++)
+		{
+		System.out.print("* ");
+		}
+	   System.out.println();
+	  }
+	 for(int i=n;i>0;i--)
+	  {
+	   for(int j=1;j<i;j++)
+		{
+		System.out.print("* ");
+		}
+	   System.out.println();
+	  }
+	}
+}
+
+OUTPUT:
+E:\sasi coding>java PatternTriangle
+5
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*

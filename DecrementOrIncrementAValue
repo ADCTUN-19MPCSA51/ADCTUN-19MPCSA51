@@ -1,0 +1,36 @@
+/* PROGRAM TO OBTAIN A VALUE AND 
+INCREMENT ITS VALUE BY 1 IF IT IS DIVISIBLE BY 4
+ OTHERWISE DECREMENT ITS VALUE BY 1*/
+
+import java.util.*;
+
+public class DecrementOrIncrementAValue
+{
+ public static void main(String args[])
+ {
+  Scanner s=new Scanner(System.in);
+	int N=s.nextInt();
+	int n=N%4;
+	if(n==0)
+	{
+	  N++;
+	  System.out.println("Incremented value of N is "+N);
+	}
+	else
+	{
+	  N--;
+	  System.out.println("Decremented value of N is "+N);
+	}
+ }
+}
+
+/*
+OUTPUT:
+
+8
+Incremented value of N is 9
+
+
+5
+Decremented value of N is 4
+*/
